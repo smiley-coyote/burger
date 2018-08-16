@@ -18,3 +18,31 @@ li {
    margin-bottom: 5px;
  }
  
+ #ready-to-eat {
+  margin-left: 20%;
+   float: left;
+ }
+
+ #eaten {
+  margin-right: 20%;
+   float: right;
+ }
+
+ #burger-form {
+ 
+ clear: left;
+ margin-left: 40%;
+ }
+
+ header {
+   width: 900px;
+   margin: 0 auto;
+   text-align: center;
+ }
+
+ #main-body {
+   height: auto;
+   width: 900px;
+   margin: 0 auto;
+   border: 2px solid black;
+ }

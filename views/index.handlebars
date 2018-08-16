@@ -1,7 +1,10 @@
+<header>
 <h1>OMG Burgers</h1>
+</header>
 
+<div id="main-body">
+<div id="ready-to-eat">
 <h2>Burgers</h2>
-
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
@@ -9,7 +12,9 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
+<div id="eaten">
 <h2>Devoured Burgers</h2>
 
 <ul>
@@ -19,7 +24,9 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
+<div id="burger-form">
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -32,3 +39,5 @@
 
   <button type="submit">Add Burger</button>
 </form>
+</div>
+</div>
