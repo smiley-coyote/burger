@@ -1,14 +1,20 @@
 var orm = require("../config/orm.js");
 
 var burger = {
-   all: function(){
-      // orm goes here
+   all: function(cb){
+      orm.selectAll("burgers", function(res) {
+         cb(res);
+       });
    },
-   insert: function(){
-      // orm goes here
+   create: function(cols, vals, cb){
+      orm.insertOne("burgers", cols, vals, function(res) {
+         cb(res);
+       });
    },
-   update: function(){
-      // orm goes here
+   update: function(objColVals, condition, cb){
+      orm.updateOne("burgers", objColVals, condition, function(res) {
+         cb(res);
+       });
    }
 }
 
