@@ -1,43 +1,37 @@
 <header>
-<h1>OMG Burgers</h1>
+  <img src="../img/logo.png" height="200px" width="auto">
 </header>
 
 <div id="main-body">
-<div id="ready-to-eat">
-<h2>Burgers</h2>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-</div>
-
-<div id="eaten">
-<h2>Devoured Burgers</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-
-<div id="burger-form">
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+  <div id="ready-to-eat">
+    <h2>Burgers</h2>
+    <ul>
+      {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=false}} {{/unless}} {{/each}}
+    </ul>
   </div>
 
+  <div id="eaten">
+    <h2>Devoured Burgers</h2>
+
+    <ul>
+      {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=true}} {{/if}} {{/each}}
+    </ul>
+  </div>
+
+  <div id="burger-form">
+    <img src="../img/kel.jpg">
+    <p>Welcome to Good Burger, home of the Good Burger, can I take ya order?</p>
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="name">
+      </div>
 
 
-  <button type="submit">Add Burger</button>
-</form>
-</div>
+
+      <button type="submit">Add Burger</button>
+    </form>
+  </div>
 </div>
